@@ -1,0 +1,19 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: eureka-server
+eureka:
+  instance:
+    hostname: 192.168.5.47
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+        defaultZone: http://192.168.5.47:8001/eureka/
+  server:
+    enable-self-preservation: false #关闭自我保护机制
+
+
+
+

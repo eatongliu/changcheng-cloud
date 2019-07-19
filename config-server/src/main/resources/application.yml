@@ -1,0 +1,14 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: report-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/liuyutongsoso/springcloud-config.git
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.5.47:8001/eureka/
